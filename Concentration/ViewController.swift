@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var cardButtonsArray: [UIButton]!
     
+    var emojiChoices = ["🎃","👻","🎃","👻"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +31,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchCard(_ sender: UIButton) {
-        //"👻"
         flipCount += 1
         if let cardNumber = cardButtonsArray.firstIndex(of: sender) {
             //the "if let" auto-unwraps it and ...
-            print("cardNumber = \(cardNumber)")
+            flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
         } else {
             print("chosen card was not in cardButtons")
         }
