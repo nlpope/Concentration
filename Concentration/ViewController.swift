@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var flipCountLabel: UILabel!
     
-    @IBOutlet var cardButtons: [UIButton]!
+    @IBOutlet var cardButtonsArray: [UIButton]!
     
     
     override func viewDidLoad() {
@@ -31,7 +31,14 @@ class ViewController: UIViewController {
     @IBAction func touchCard(_ sender: UIButton) {
         //"👻"
         flipCount += 1
-        flipCard(withEmoji: "👻", on: sender)
+        if let cardNumber = cardButtonsArray.firstIndex(of: sender) {
+            //the "if let" auto-unwraps it and ...
+            print("cardNumber = \(cardNumber)")
+        } else {
+            print("chosen card was not in cardButtons")
+        }
+        
+  
         
     }
     
