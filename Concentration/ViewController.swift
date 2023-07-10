@@ -57,6 +57,6 @@ class ViewController: UIViewController {
 }
 
 /**
- doing reading assignment
+ doing reading assignment - collection types
  */
 
