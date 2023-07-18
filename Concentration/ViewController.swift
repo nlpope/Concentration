@@ -6,7 +6,7 @@
 //
 
 /**
- finishing up reading assnmt
+doing the reading assnmt
  */
 
 import UIKit
