@@ -5,9 +5,6 @@
 //  Created by Noah Pope on 6/19/23.
 //
 
-/**
-done with 1st reading assnmt .
- */
 
 import UIKit
 
@@ -15,6 +12,7 @@ class ViewController: UIViewController {
     //properties = instance variables (flipCount below)
     //all instance variables in swift need an init value
     //but init()s get complicated on classes so just ... = 0, no type necessary
+    var game = Concentration()
     var flipCount = 0 {
         //below didSet = property observer
         //it observes when the prop/instance variable is changed/set
