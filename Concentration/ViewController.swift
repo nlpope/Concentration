@@ -6,7 +6,7 @@
 //
 
 /**
-done with 1st reading assnmt
+done with 1st reading assnmt .
  */
 
 import UIKit
