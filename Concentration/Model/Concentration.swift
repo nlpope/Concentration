@@ -18,7 +18,10 @@ class Concentration {
     init(numberOfPairsOfCards: Int) {
         for identifier in 0..<numberOfPairsOfCards {
             let card = Card(identifier: identifier)
-
+            let matchingCard = card
+            //matchingCard is a copy of card (struct)
+            cards.append(card)
+            cards.append(matchingCard)
         }
     }
 }
