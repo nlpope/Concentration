@@ -18,8 +18,7 @@ class Concentration {
     init(numberOfPairsOfCards: Int) {
         for identifier in 0..<numberOfPairsOfCards {
             let card = Card(identifier: identifier)
-            cards.append(card)
-            cards.append(card)
+            cards += [card, card]
             //appending a struct to an array copies it
             //so we now have 1 OG "card" and 2 independent copies for the 'append's
 
