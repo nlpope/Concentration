@@ -14,7 +14,7 @@ struct Card {
     var identifier: Int
     
     static var identifierFactory = 0
-    //stored w the type Card
+    //now EVERY instance of type Card is aware of used identifierFactory values
     
     static func getUniqueIdentifier() -> Int {
         identifierFactory += 1

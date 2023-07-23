@@ -36,12 +36,15 @@ class ViewController: UIViewController {
         flipCount += 1
         if let cardNumber = cardButtonsArray.firstIndex(of: sender) {
             //the "if let" auto-unwraps it and ...
-            game.chooseCard(at: indexPath.row)
+            game.chooseCard(at: cardNumber)
             updateViewFromModel()
         } else {
             print("chosen card was not in cardButtons")
         }
         
+        func updateViewFromModel() {
+            
+        }
   
         
     }
