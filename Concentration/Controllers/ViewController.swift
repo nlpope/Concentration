@@ -5,14 +5,14 @@
 //  Created by Noah Pope on 6/19/23.
 //
 
-
+// reviewing static vars
 import UIKit
 
 class ViewController: UIViewController {
     //properties = instance variables (flipCount below)
     //all instance variables in swift need an init value
     //but init()s get complicated on classes so just ... = 0, no type necessary
-    var game = Concentration()
+    lazy var game = Concentration(numberOfPairsOfCards: (cardButtonsArray.count + 1) / 2)
     var flipCount = 0 {
         //below didSet = property observer
         //it observes when the prop/instance variable is changed/set
@@ -36,7 +36,8 @@ class ViewController: UIViewController {
         flipCount += 1
         if let cardNumber = cardButtonsArray.firstIndex(of: sender) {
             //the "if let" auto-unwraps it and ...
-            flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+            game.chooseCard(at: indexPath.row)
+            updateViewFromModel()
         } else {
             print("chosen card was not in cardButtons")
         }

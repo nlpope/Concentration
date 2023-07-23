@@ -13,8 +13,16 @@ struct Card {
     var isMathced = false
     var identifier: Int
     
-    init(identifier: Int) {
-        self.identifier  = identifier
+    static var identifierFactory = 0
+    //stored w the type Card
+    
+    static func getUniqueIdentifier() -> Int {
+        identifierFactory += 1
+        return Card.identifierFactory
+    }
+    
+    init() {
+        self.identifier = Card.getUniqueIdentifier()
     }
     //identifier describes "pair 1, pair 2, pair 3, etc"
 }
