@@ -5,7 +5,7 @@
 //  Created by Noah Pope on 6/19/23.
 //
 
-// reviewing static vars
+// Researching Realm
 import UIKit
 
 class ViewController: UIViewController {
