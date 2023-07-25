@@ -13,7 +13,7 @@ class Concentration {
     
     //do summat when a card is chosen
     func chooseCard(at index: Int) {
-        
+        cards[index].isFaceUp = !cards[index].isFaceUp
     }
     
     init(numberOfPairsOfCards: Int) {

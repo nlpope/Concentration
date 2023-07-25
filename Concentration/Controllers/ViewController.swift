@@ -10,6 +10,13 @@
  > Application Programming Interface
  > How you use this class
  > a list of all the methods and instance variables in a class
+ 
+ DATA TYPE TAG
+ >  "<>" specifies type
+ > tuple
+ > var something = Dictionary<Int, String>()
+ >> "something" = an empty dictionary where you can look up an int and get back a string
+ >> can be re-written as [Int : String]()
  */
 
 import UIKit
@@ -60,8 +67,12 @@ class ViewController: UIViewController {
         }
         
         var emojiChoices = ["🎃","👻","💀","🦇", "😱", "🙀", "🍭", "🍬", "🍎", "😈"]
+        
+        var emoji = Dictionary<Int,String>()
+        //creates an empty dictionary - IDs (Int) map to Emojis (String)
 
         func emoji(for card: Card) -> String {
+            let chosenEmoji = emoji[card.identifier]
             return "?"
         }
   
