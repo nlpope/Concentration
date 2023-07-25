@@ -5,7 +5,6 @@
 //  Created by Noah Pope on 6/19/23.
 //
 
-// Researching Realm w Stewart Lynch
 import UIKit
 
 class ViewController: UIViewController {
