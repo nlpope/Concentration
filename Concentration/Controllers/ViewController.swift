@@ -30,9 +30,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var cardButtonsArray: [UIButton]!
     
-    var emojiChoices = ["🎃","👻","🎃","👻"]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,6 +59,8 @@ class ViewController: UIViewController {
             }
         }
         
+        var emojiChoices = ["🎃","👻","💀","🦇", "😱", "🙀", "🍭", "🍬", "🍎", "😈"]
+
         func emoji(for card: Card) -> String {
             return "?"
         }
