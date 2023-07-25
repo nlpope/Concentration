@@ -27,9 +27,4 @@ class Concentration {
     }
 }
 
-/**
- API
- > Application Programming Interface
- > How you use this class
- > a list of all the methods and instance variables in a class
- */
+

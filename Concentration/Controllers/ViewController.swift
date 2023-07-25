@@ -5,6 +5,13 @@
 //  Created by Noah Pope on 6/19/23.
 //
 
+/**
+ API
+ > Application Programming Interface
+ > How you use this class
+ > a list of all the methods and instance variables in a class
+ */
+
 import UIKit
 
 class ViewController: UIViewController {
