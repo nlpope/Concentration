@@ -72,8 +72,7 @@ class ViewController: UIViewController {
         //creates an empty dictionary - IDs (Int) map to Emojis (String)
 
         func emoji(for card: Card) -> String {
-            let chosenEmoji = emoji[card.identifier]
-            return "?"
+            return emoji[card.identifier] ?? "?"
         }
   
         
