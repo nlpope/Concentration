@@ -11,6 +11,7 @@ class Concentration {
     
     var cards = [Card]()
     
+    //do summat when a card is chosen
     func chooseCard(at index: Int) {
         
     }

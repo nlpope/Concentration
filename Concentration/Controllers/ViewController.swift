@@ -5,7 +5,7 @@
 //  Created by Noah Pope on 6/19/23.
 //
 
-// Researching Realm
+// Researching Realm w Stewart Lynch
 import UIKit
 
 class ViewController: UIViewController {
@@ -43,7 +43,21 @@ class ViewController: UIViewController {
         }
         
         func updateViewFromModel() {
-            
+            for index in cardButtonsArray.indices {
+                let button = cardButtonsArray[index]
+                let card = game.cards[index]
+                if card.isFaceUp {
+                    button.setTitle(emoji(for: card), for: .normal)
+                    button.backgroundColor = .white
+                } else {
+                    button.setTitle("", for: .normal)
+                    button.backgroundColor = card.isMathced ? .clear : .orange
+                }
+            }
+        }
+        
+        func emoji(for card: Card) -> String {
+            return "?"
         }
   
         
