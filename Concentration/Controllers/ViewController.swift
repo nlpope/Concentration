@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
     @IBAction func touchCard(_ sender: UIButton) {
         flipCount += 1
         if let cardNumber = cardButtonsArray.firstIndex(of: sender) {
@@ -51,45 +51,53 @@ class ViewController: UIViewController {
         } else {
             print("chosen card was not in cardButtons")
         }
-        
-        func updateViewFromModel() {
-            for index in cardButtonsArray.indices {
-                let button = cardButtonsArray[index]
-                let card = game.cards[index]
-                if card.isFaceUp {
-                    button.setTitle(emoji(for: card), for: .normal)
-                    button.backgroundColor = .white
-                } else {
-                    button.setTitle("", for: .normal)
-                    button.backgroundColor = card.isMathced ? .clear : .orange
-                }
+    }
+    
+    func updateViewFromModel() {
+        for index in cardButtonsArray.indices {
+            let button = cardButtonsArray[index]
+            let card = game.cards[index]
+            if card.isFaceUp {
+                button.setTitle(emoji(for: card), for: .normal)
+                button.backgroundColor = .white
+            } else {
+                button.setTitle("", for: .normal)
+                button.backgroundColor = card.isMathced ? .clear : .orange
             }
         }
-        
-        var emojiChoices = ["🎃","👻","💀","🦇", "😱", "🙀", "🍭", "🍬", "🍎", "😈"]
-        
-        var emoji = Dictionary<Int,String>()
-        //creates an empty dictionary - IDs (Int) map to Emojis (String)
-
-        func emoji(for card: Card) -> String {
-            return emoji[card.identifier] ?? "?"
-        }
-  
-        
     }
     
-    func flipCard(withEmoji emoji: String, on button: UIButton){
-        if button.currentTitle == emoji {
-            button.setTitle("", for: .normal)
-            button.backgroundColor = .orange
-        } else {
-            //this is where it's shrinking
-            button.setTitle(emoji, for: .normal)
-            button.backgroundColor = .white
+    var emojiChoices = ["🎃","👻","💀","🦇", "😱", "🙀", "🍭", "🍬", "🍎", "😈"]
+    
+    var emoji = Dictionary<Int,String>()
+    //creates an empty dictionary - IDs (Int) map to Emojis (String)
+    
+    func emoji(for card: Card) -> String {
+        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
+            //put emoji in dictionary for that card
+            //"Just In Time"
+            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+            emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
+            
         }
+        return emoji[card.identifier] ?? "?"
     }
+    
     
 }
+
+func flipCard(withEmoji emoji: String, on button: UIButton){
+    if button.currentTitle == emoji {
+        button.setTitle("", for: .normal)
+        button.backgroundColor = .orange
+    } else {
+        //this is where it's shrinking
+        button.setTitle(emoji, for: .normal)
+        button.backgroundColor = .white
+    }
+}
+
+
 
 /**
  doing reading assignment - collection types
