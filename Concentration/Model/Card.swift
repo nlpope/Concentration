@@ -10,7 +10,7 @@ import Foundation
 struct Card {
     
     var isFaceUp = false
-    var isMathced = false
+    var isMatched = false
     var identifier: Int
     
     static var identifierFactory = 0

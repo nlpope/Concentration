@@ -62,7 +62,7 @@ class ViewController: UIViewController {
                 button.backgroundColor = .white
             } else {
                 button.setTitle("", for: .normal)
-                button.backgroundColor = card.isMathced ? .clear : .orange
+                button.backgroundColor = card.isMatched ? .clear : .orange
             }
         }
     }
