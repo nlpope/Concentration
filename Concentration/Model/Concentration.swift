@@ -5,6 +5,15 @@
 //  Created by Noah Pope on 7/19/23.
 //
 
+/**
+ NOTES:
+ 
+ homework - add new game button
+ hw - shuffle cards
+ hw - make card buttons 80pts wide (fits 4 across really nice)
+ > having trouble setting button length to 80pts 
+ */
+
 import Foundation
 
 class Concentration {
