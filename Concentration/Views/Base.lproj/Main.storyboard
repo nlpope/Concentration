@@ -24,18 +24,171 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-q7-7Tr">
-                                <rect key="frame" x="16" y="47" width="90" height="122"/>
+                                <rect key="frame" x="3" y="84" width="90" height="122"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="047-eJ-elV"/>
-                                    <constraint firstAttribute="width" constant="80" id="2XI-1e-RVx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="cZK-Vr-s8a"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=" ">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5S-vu-GuU"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvM-gg-Ixh">
+                                <rect key="frame" x="101" y="84" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="W1E-hJ-YRe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSI-t5-xyl"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-DH-afJ">
+                                <rect key="frame" x="199" y="84" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="BVq-At-gj1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CmJ-iR-aSv"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmV-Nk-SUF">
+                                <rect key="frame" x="297" y="84" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="f1r-Xn-Q6e"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HzT-FW-Eph"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsy-AY-6LP">
+                                <rect key="frame" x="3" y="232" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="x1r-3z-vyI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2o2-BB-d7G"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loS-0c-mKg">
+                                <rect key="frame" x="101" y="232" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="QO2-8N-vxF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHM-SX-Zb7"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvv-Q2-2Om">
+                                <rect key="frame" x="199" y="232" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="aMe-kI-Vr8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tks-Sp-hCh"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4t-Dn-TrL">
+                                <rect key="frame" x="297" y="232" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="IjW-1U-qmW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1c-Fu-GmX"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iif-kI-WGj">
+                                <rect key="frame" x="3" y="386" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tv8-je-Ksi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPZ-dC-xLs"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU5-vA-09m">
+                                <rect key="frame" x="101" y="386" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="I07-bo-aiZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbd-Qe-Ttk"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbr-iC-dEC">
+                                <rect key="frame" x="199" y="386" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="kXq-JA-qwk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7U-so-nH8"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umF-ac-Nkt">
+                                <rect key="frame" x="297" y="386" width="90" height="122"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="TsW-QB-KUs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="150"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewX-lZ-Opf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,6 +198,17 @@
                     <connections>
                         <outlet property="flipCountLabel" destination="u8j-Vd-0pQ" id="NMK-cP-MLq"/>
                         <outletCollection property="cardButtonsArray" destination="KEM-q7-7Tr" collectionClass="NSMutableArray" id="WWP-fa-wOK"/>
+                        <outletCollection property="cardButtonsArray" destination="UvM-gg-Ixh" collectionClass="NSMutableArray" id="kuZ-r8-1cw"/>
+                        <outletCollection property="cardButtonsArray" destination="AA4-DH-afJ" collectionClass="NSMutableArray" id="Tgh-Xi-8SM"/>
+                        <outletCollection property="cardButtonsArray" destination="rmV-Nk-SUF" collectionClass="NSMutableArray" id="zR1-hA-61b"/>
+                        <outletCollection property="cardButtonsArray" destination="hsy-AY-6LP" collectionClass="NSMutableArray" id="7kl-kS-2Cn"/>
+                        <outletCollection property="cardButtonsArray" destination="loS-0c-mKg" collectionClass="NSMutableArray" id="ce6-iY-kjp"/>
+                        <outletCollection property="cardButtonsArray" destination="Uvv-Q2-2Om" collectionClass="NSMutableArray" id="eC2-iA-QaQ"/>
+                        <outletCollection property="cardButtonsArray" destination="W4t-Dn-TrL" collectionClass="NSMutableArray" id="WT0-em-1gT"/>
+                        <outletCollection property="cardButtonsArray" destination="iif-kI-WGj" collectionClass="NSMutableArray" id="b5K-Y3-9ia"/>
+                        <outletCollection property="cardButtonsArray" destination="FU5-vA-09m" collectionClass="NSMutableArray" id="Rsi-C8-z2T"/>
+                        <outletCollection property="cardButtonsArray" destination="Kbr-iC-dEC" collectionClass="NSMutableArray" id="wWa-JH-t3M"/>
+                        <outletCollection property="cardButtonsArray" destination="umF-ac-Nkt" collectionClass="NSMutableArray" id="GiQ-AM-vap"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

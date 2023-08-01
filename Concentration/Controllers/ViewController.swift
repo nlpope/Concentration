@@ -17,6 +17,9 @@
  > var something = Dictionary<Int, String>()
  >> "something" = an empty dictionary where you can look up an int and get back a string
  >> can be re-written as [Int : String]()
+ 
+ UPDATES & QUESTIONS
+ adding constraints that aren't registering - reviewing storyboard and alignment
  */
 
 import UIKit
@@ -39,7 +42,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
     
     @IBAction func touchCard(_ sender: UIButton) {
