@@ -20,6 +20,8 @@
  
  UPDATES & QUESTIONS
  adding constraints that aren't registering - reviewing storyboard and alignment
+ 
+ still tweaking constraint issue
  */
 
 
